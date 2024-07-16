@@ -35,14 +35,19 @@ const Posts = () => {
       {loading && <h1>Yuklanmoqda...</h1>}
       {error && <h2>{error}</h2>}
       {posts.length > 0 && (
+         <>
+          <h1 className="student">Students app </h1>
         <table>
           <thead>
+
             <tr>
               <th>ID</th>
               <th>First Name</th>
               <th>Last Name</th>
               <th>group</th>
+              <th><p></p></th>
             </tr>
+            
           </thead>
           <tbody>
             {posts.map((post) => (
@@ -51,10 +56,15 @@ const Posts = () => {
                 <td>{post.firstName}</td>
                 <td>{post.lastName}</td>
                 <td>{post.group}</td>
+                <td>
+                <button>Dalete</button>                  
+                <button className="Update">Edit</button>
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
+         </>
       )}
     </div>
   );
