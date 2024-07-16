@@ -41,6 +41,7 @@ const Posts = () => {
               <th>ID</th>
               <th>First Name</th>
               <th>Last Name</th>
+              <th>group</th>
             </tr>
           </thead>
           <tbody>
@@ -49,6 +50,7 @@ const Posts = () => {
                 <td>{post.id}</td>
                 <td>{post.firstName}</td>
                 <td>{post.lastName}</td>
+                <td>{post.group}</td>
               </tr>
             ))}
           </tbody>
