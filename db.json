@@ -1,0 +1,180 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "firstName": "Ali",
+        "lastName": "Valiyev",
+        "phone": "+998901234567",
+        "gender": "male"
+      },
+      {
+        "id": 2,
+        "firstName": "Laylo",
+        "lastName": "Karimova",
+        "phone": "+998998765432",
+        "gender": "female"
+      },
+      {
+        "id": 3,
+        "firstName": "Hasan",
+        "lastName": "Shodmonov",
+        "phone": "+998935555555",
+        "gender": "male"
+      },
+      {
+        "id": 4,
+        "firstName": "Nigora",
+        "lastName": "Abdukarimova",
+        "phone": "+998994444444",
+        "gender": "female"
+      },
+      {
+        "id": 5,
+        "firstName": "Bobur",
+        "lastName": "Yuldashev",
+        "phone": "+998931234567",
+        "gender": "male"
+      },
+      {
+        "id": 6,
+        "firstName": "Madinabonu",
+        "lastName": "Tojiyeva",
+        "phone": "+998938765432",
+        "gender": "female"
+      },
+      {
+        "id": 7,
+        "firstName": "Jasur",
+        "lastName": "Tursunov",
+        "phone": "+998937654321",
+        "gender": "male"
+      },
+      {
+        "id": 8,
+        "firstName": "Mohira",
+        "lastName": "Ismoilova",
+        "phone": "+998909876543",
+        "gender": "female"
+      },
+      {
+        "id": 9,
+        "firstName": "Rustam",
+        "lastName": "Nazarov",
+        "phone": "+998931234568",
+        "gender": "male"
+      },
+      {
+        "id": 10,
+        "firstName": "Aziza",
+        "lastName": "Sobirova",
+        "phone": "+998938765431",
+        "gender": "female"
+      },
+      {
+        "id": 11,
+        "firstName": "Diyor",
+        "lastName": "Rahmonov",
+        "phone": "+998937654322",
+        "gender": "male"
+      },
+      {
+        "id": 12,
+        "firstName": "Shahnoza",
+        "lastName": "Olimova",
+        "phone": "+998909876542",
+        "gender": "female"
+      },
+      {
+        "id": 13,
+        "firstName": "Jamshid",
+        "lastName": "Ahmedov",
+        "phone": "+998931234569",
+        "gender": "male"
+      },
+      {
+        "id": 14,
+        "firstName": "Zarina",
+        "lastName": "Niyozova",
+        "phone": "+998938765430",
+        "gender": "female"
+      },
+      {
+        "id": 15,
+        "firstName": "Sardor",
+        "lastName": "G'ofurov",
+        "phone": "+998937654323",
+        "gender": "male"
+      },
+      {
+        "id": 16,
+        "firstName": "Mubina",
+        "lastName": "Usmonova",
+        "phone": "+998909876541",
+        "gender": "female"
+      },
+      {
+        "id": 17,
+        "firstName": "Ibrohim",
+        "lastName": "Mirzayev",
+        "phone": "+998931234560",
+        "gender": "male"
+      },
+      {
+        "id": 18,
+        "firstName": "Dilnoza",
+        "lastName": "Qodirova",
+        "phone": "+998938765429",
+        "gender": "female"
+      },
+      {
+        "id": 19,
+        "firstName": "Farrux",
+        "lastName": "Toshpulatov",
+        "phone": "+998937654324",
+        "gender": "male"
+      },
+      {
+        "id": 20,
+        "firstName": "Oysara",
+        "lastName": "Yoqubova",
+        "phone": "+998909876540",
+        "gender": "female"
+      },
+      {
+        "id": 21,
+        "firstName": "Iskandar",
+        "lastName": "Qudratov",
+        "phone": "+998931234561",
+        "gender": "male"
+      },
+      {
+        "id": 22,
+        "firstName": "Ruxsora",
+        "lastName": "Turg'unova",
+        "phone": "+998938765428",
+        "gender": "female"
+      },
+      {
+        "id": 23,
+        "firstName": "Bekzod",
+        "lastName": "Abduvohidov",
+        "phone": "+998937654325",
+        "gender": "male"
+      },
+      {
+        "id": 24,
+        "firstName": "Sevara",
+        "lastName": "Hamidova",
+        "phone": "+998909876539",
+        "gender": "female"
+      },
+      {
+        "id": 25,
+        "firstName": "Anvar",
+        "lastName": "Yusupov",
+        "phone": "+998931234562",
+        "gender": "male"
+      }
+    ]
+}
+  
