@@ -142,6 +142,7 @@ button {
     background-color: blue;
   }
   form{
+    gap: 5px;
     position: absolute;
     padding: 10px;
     display: flex;
@@ -150,4 +151,32 @@ button {
   }
   form.input{
     padding: 10px;
+  }
+  .input1{
+    padding: 10px;
+    outline: none;
+    background-color: #dddddd;
+    border-radius: 4px;
+    border: none;
+  }
+  .input2{
+    padding: 10px;
+    outline: none;
+    background-color: #dddddd;
+    border-radius: 4px;
+    border: none;
+  }
+  .input3{
+    padding: 10px;
+    outline: none;
+    background-color: #dddddd;
+    border-radius: 4px;
+    border: none;
+  }
+  .input4{
+    padding: 10px;
+    outline: none;
+    background-color: #dddddd;
+    border-radius: 4px;
+    border: none;
   }

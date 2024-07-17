@@ -133,28 +133,28 @@ const Posts = () => {
           </tbody>
         </table>
         <form onSubmit={handleAdd}>
-          <input
+          <input className="input1"
             type="text"
             name="id"
             placeholder="ID"
             value={formData.id}
             onChange={handleChange}
           />
-          <input
+          <input className="input2"
             type="text"
             name="firstName"
             placeholder="First Name"
             value={formData.firstName}
             onChange={handleChange}
           />
-          <input
+          <input className="input3"
             type="text"
             name="lastName"
             placeholder="Last Name"
             value={formData.lastName}
             onChange={handleChange}
           />
-          <input
+          <input className="input4"
             type="text"
             name="group"
             placeholder="Group"
