@@ -25,6 +25,8 @@ const Posts = () => {
     group: "",
   });
 
+  const [formError, setFormError] = useState("");
+
   const fetchPosts = async () => {
     dispatch({ type: FETCH_POSTS_REQUEST });
     try {
@@ -57,6 +59,10 @@ const Posts = () => {
 
   const handleAdd = async (e) => {
     e.preventDefault();
+    if (!formData.id || !formData.firstName || !formData.lastName || !formData.group) {
+      setFormError("Barcha maydonlar to'ldirilishi shart.");
+      return;
+    }
     dispatch({ type: ADD_POST_REQUEST });
     try {
       const res = await fetch("http://localhost:3000/users", {
@@ -77,7 +83,8 @@ const Posts = () => {
         lastName: "",
         group: "",
       });
-      fetchPosts();  // Fetch the posts again to update the list
+      setFormError("");
+      fetchPosts();  
     } catch (err) {
       dispatch({ type: ADD_POST_ERROR, payload: err.message });
       console.error("Xatolik yuzaga keldi:", err);
@@ -100,6 +107,7 @@ const Posts = () => {
     <div>
       {loading && <h1>Yuklanmoqda...</h1>}
       {error && <h2>{error}</h2>}
+      {formError && <h2 style={{ color: "red" }}>{formError}</h2>}
       <>
         <h1 className="student">Students app</h1>
         <table>
@@ -147,7 +155,7 @@ const Posts = () => {
             value={formData.firstName}
             onChange={handleChange}
           />
-          <input className="input3"
+          <input  className="input3"
             type="text"
             name="lastName"
             placeholder="Last Name"
@@ -171,4 +179,3 @@ const Posts = () => {
 };
 
 export default Posts;
-``
