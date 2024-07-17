@@ -94,12 +94,23 @@
       "lastName": "Bekmurodov",
       "group": "58"
     },
-   
     {
       "id": "sdasdaasda",
       "firstName": "asdasfad",
       "lastName": "asdaf",
       "group": "dasfadsf"
+    },
+    {
+      "id": "sfaffasdfs",
+      "firstName": "fadfsd",
+      "lastName": "fdssd",
+      "group": "sfgsfd"
+    },
+    {
+      "id": "sasf",
+      "firstName": "sdfd",
+      "lastName": "dffasfs",
+      "group": "fdsdfsd"
     }
   ]
 }

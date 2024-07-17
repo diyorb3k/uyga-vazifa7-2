@@ -142,6 +142,9 @@ button {
     background-color: blue;
   }
   form{
+    margin-left: 200px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
     gap: 5px;
     position: absolute;
     padding: 10px;
