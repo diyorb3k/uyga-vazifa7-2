@@ -1,14 +1,6 @@
 {
   "users": [
     {
-      "id": "11",
-      "firstName": "Diyor",
-      "lastName": "Rahmonov",
-      "phone": "+998937654322",
-      "gender": "male",
-      "group": "2"
-    },
-    {
       "id": "12",
       "firstName": "Shahnoza",
       "lastName": "Olimova",
@@ -55,10 +47,16 @@
       "group": "59"
     },
     {
-      "id": "dfsggfdf",
-      "firstName": "asfdgs",
-      "lastName": "dgsfdgdfhg",
-      "group": "dgdsfhd"
+      "id": "1",
+      "firstName": "Diyorbek",
+      "lastName": "Bekmurodov",
+      "group": "2"
+    },
+    {
+      "id": "2",
+      "firstName": "Diyorbek",
+      "lastName": "Bekmurodov",
+      "group": "2"
     }
   ]
 }

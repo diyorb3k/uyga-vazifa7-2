@@ -136,11 +136,12 @@ button {
 
 
   .Add{
-    margin-left:11git 10px !important;
+    position: fixed !important;
+    margin-left:1410px !important;
     position: absolute;
     color: black;
     margin-left: 300px;
-    margin-top: 10px;
+    margin-top: -235px;
     background-color: blue;
   }
   form{
