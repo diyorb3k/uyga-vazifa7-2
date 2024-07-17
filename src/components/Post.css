@@ -50,6 +50,7 @@ button {
   }
   
   button:hover {
+    z-index: 01;
     background-image: linear-gradient(
       to right,
       rgb(250, 82, 82),
@@ -131,4 +132,12 @@ button {
     top: 0;
     left: 0;
     width: 100%;
+  }
+
+
+  .Add{
+    color: black;
+    margin-left: 300px;
+    margin-top: 10px;
+    background-color: blue;
   }
