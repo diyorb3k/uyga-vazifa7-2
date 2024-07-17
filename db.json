@@ -41,12 +41,6 @@
       "group": "3"
     },
     {
-      "id": "2",
-      "firstName": "Diyorbek",
-      "lastName": "Bekmurodov",
-      "group": "59"
-    },
-    {
       "id": "1",
       "firstName": "Diyorbek",
       "lastName": "Bekmurodov",
@@ -59,10 +53,28 @@
       "group": "2"
     },
     {
-      "id": "zvcvzc",
+      "id": "1231",
       "firstName": "Diyorbek",
-      "lastName": "asfwwfew",
-      "group": "zvzxz"
+      "lastName": "Bekmurodov",
+      "group": "58"
+    },
+    {
+      "id": "2",
+      "firstName": "Diyorbek",
+      "lastName": "Bekmurodov",
+      "group": "2"
+    },
+    {
+      "id": "123",
+      "firstName": "Diyorbek",
+      "lastName": "Bekmurodov",
+      "group": "2"
+    },
+    {
+      "id": "124",
+      "firstName": "Diyorbek",
+      "lastName": "Bekmurodov",
+      "group": "2"
     }
   ]
 }
