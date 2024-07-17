@@ -155,7 +155,7 @@ const Posts = () => {
             value={formData.firstName}
             onChange={handleChange}
           />
-          <input  className="input3"
+          <input className="input3"
             type="text"
             name="lastName"
             placeholder="Last Name"
@@ -169,10 +169,10 @@ const Posts = () => {
             value={formData.group}
             onChange={handleChange}
           />
-          <button type="submit" className="Add">
-            ADD
-          </button>
         </form>
+        <button onClick={handleAdd} className="Add">
+          ADD
+        </button>
       </>
     </div>
   );

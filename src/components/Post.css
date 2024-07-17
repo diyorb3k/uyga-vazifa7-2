@@ -136,12 +136,16 @@ button {
 
 
   .Add{
+    margin-left:500px !important;
+    position: absolute;
     color: black;
     margin-left: 300px;
     margin-top: 10px;
     background-color: blue;
   }
   form{
+    padding: 30px !important;
+    padding: 0 60px !important;
     margin-left: 200px;
     border-radius: 10px;
     background-color: #f2f2f2;
@@ -151,11 +155,14 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px !important;
+    padding-bottom: 30px;
   }
   form.input{
     padding: 10px;
   }
   .input1{
+    margin-top: 30px;
     padding: 10px;
     outline: none;
     background-color: #dddddd;
