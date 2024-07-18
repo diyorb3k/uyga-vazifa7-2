@@ -136,12 +136,12 @@ button {
 
 
   .Add{
-    position: fixed !important;
-    margin-left:1410px !important;
+    /* position: fixed !important; */
+    /* margin-left:1410px !important; */
     position: absolute;
     color: black;
     margin-left: 300px;
-    margin-top: -560px;
+    margin-top: -760px;
     background-color: blue;
   }
   form{
@@ -192,4 +192,20 @@ button {
     background-color: #dddddd;
     border-radius: 4px;
     border: none;
+  }
+  .search{
+    position: fixed !important;
+    width: 60%;
+    margin-top: -130px;
+    margin-left: 300px;
+    position: absolute;
+    padding: 20px;  
+    outline: none;
+    background-color: #dddddd;
+    border-radius: 4px;
+    border: none;
+
+  }
+  .search_input{
+    background-color: #fff !important;
   }

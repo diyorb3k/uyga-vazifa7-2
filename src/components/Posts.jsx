@@ -26,16 +26,19 @@ const Posts = () => {
   });
 
   const [formError, setFormError] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredPosts, setFilteredPosts] = useState([]);
 
   const fetchPosts = async () => {
     dispatch({ type: FETCH_POSTS_REQUEST });
     try {
       const res = await fetch("http://localhost:3000/users");
       if (!res.ok) {
-        throw new Error("Tarmoq javobi noto'g'ri");
+        throw new Error("Network response was not ok");
       }
       const data = await res.json();
       dispatch({ type: FETCH_POSTS_SUCCESS, payload: data });
+      setFilteredPosts(data); // Set initial filtered posts
     } catch (err) {
       dispatch({ type: FETCH_POSTS_ERROR, payload: err.message });
     }
@@ -48,19 +51,20 @@ const Posts = () => {
         method: "DELETE",
       });
       if (!res.ok) {
-        throw new Error("Tarmoq javobi noto'g'ri");
+        throw new Error("Network response was not ok");
       }
       dispatch({ type: DELETE_POST_SUCCESS, payload: id });
+      setFilteredPosts(filteredPosts.filter(post => post.id !== id)); // Update filtered posts
     } catch (err) {
       dispatch({ type: DELETE_POST_ERROR, payload: err.message });
-      console.error("Xatolik yuzaga keldi:", err);
+      console.error("Error occurred:", err);
     }
   };
 
   const handleAdd = async (e) => {
     e.preventDefault();
     if (!formData.id || !formData.firstName || !formData.lastName || !formData.group) {
-      setFormError("Barcha maydonlar to'ldirilishi shart.");
+      setFormError("All fields are required.");
       return;
     }
     dispatch({ type: ADD_POST_REQUEST });
@@ -73,7 +77,7 @@ const Posts = () => {
         body: JSON.stringify(formData),
       });
       if (!res.ok) {
-        throw new Error("Tarmoq javobi noto'g'ri");
+        throw new Error("Network response was not ok");
       }
       const newPost = await res.json();
       dispatch({ type: ADD_POST_SUCCESS, payload: newPost });
@@ -84,11 +88,21 @@ const Posts = () => {
         group: "",
       });
       setFormError("");
-      fetchPosts();  
+      setFilteredPosts([...filteredPosts, newPost]); // Update filtered posts
     } catch (err) {
       dispatch({ type: ADD_POST_ERROR, payload: err.message });
-      console.error("Xatolik yuzaga keldi:", err);
+      console.error("Error occurred:", err);
     }
+  };
+
+  const handleSearch = (e) => {
+    const value = e.target.value;
+    setSearchTerm(value);
+    setFilteredPosts(posts.filter(post =>
+      post.firstName.toLowerCase().includes(value.toLowerCase()) ||
+      post.lastName.toLowerCase().includes(value.toLowerCase()) ||
+      post.group.toLowerCase().includes(value.toLowerCase())
+    ));
   };
 
   useEffect(() => {
@@ -110,6 +124,15 @@ const Posts = () => {
       {formError && <h2 style={{ color: "red" }}>{formError}</h2>}
       <>
         <h1 className="student">Students app</h1>
+       <div className="search_input">
+       <input
+          className="search"
+          type="text"
+          placeholder="Search"
+          value={searchTerm}
+          onChange={handleSearch}
+        />
+       </div>
         <table>
           <thead>
             <tr>
@@ -121,7 +144,7 @@ const Posts = () => {
             </tr>
           </thead>
           <tbody>
-            {posts.map((post) => (
+            {filteredPosts.map((post) => (
               <tr key={post.id}>
                 <td>{post.id}</td>
                 <td>{post.firstName}</td>
@@ -141,38 +164,40 @@ const Posts = () => {
           </tbody>
         </table>
         <form onSubmit={handleAdd}>
-          <input className="input1"
+          <input
+            className="input1"
             type="text"
             name="id"
             placeholder="ID"
             value={formData.id}
             onChange={handleChange}
           />
-          <input className="input2"
+          <input
+            className="input2"
             type="text"
             name="firstName"
             placeholder="First Name"
             value={formData.firstName}
             onChange={handleChange}
           />
-          <input className="input3"
+          <input
+            className="input3"
             type="text"
             name="lastName"
             placeholder="Last Name"
             value={formData.lastName}
             onChange={handleChange}
           />
-          <input className="input4"
+          <input
+            className="input4"
             type="text"
             name="group"
             placeholder="Group"
             value={formData.group}
             onChange={handleChange}
           />
+          <button type="submit" className="A">ADD</button>
         </form>
-        <button onClick={handleAdd} className="Add">
-          ADD
-        </button>
       </>
     </div>
   );

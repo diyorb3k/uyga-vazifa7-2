@@ -1,28 +1,12 @@
 {
   "users": [
     {
-      "id": "12",
-      "firstName": "Shahnoza",
-      "lastName": "Olimova",
-      "phone": "+998909876542",
-      "gender": "female",
-      "group": "3"
-    },
-    {
       "id": "13",
       "firstName": "Jamshid",
       "lastName": "Ahmedov",
       "phone": "+998931234569",
       "gender": "male",
       "group": "5"
-    },
-    {
-      "id": "14",
-      "firstName": "Zarina",
-      "lastName": "Niyozova",
-      "phone": "+998938765430",
-      "gender": "female",
-      "group": "1"
     },
     {
       "id": "15",
@@ -47,22 +31,10 @@
       "group": "2"
     },
     {
-      "id": "2",
-      "firstName": "Diyorbek",
-      "lastName": "Bekmurodov",
-      "group": "2"
-    },
-    {
       "id": "1231",
       "firstName": "Diyorbek",
       "lastName": "Bekmurodov",
       "group": "58"
-    },
-    {
-      "id": "2",
-      "firstName": "Diyorbek",
-      "lastName": "Bekmurodov",
-      "group": "2"
     },
     {
       "id": "123",
@@ -75,6 +47,54 @@
       "firstName": "Diyorbek",
       "lastName": "Bekmurodov",
       "group": "2"
+    },
+    {
+      "id": "2",
+      "firstName": "Diyorbek",
+      "lastName": "jhb,nbk.m, ",
+      "group": "2"
+    },
+    {
+      "id": "zvcvzc",
+      "firstName": "Diyorbek",
+      "lastName": "Bekmurodov",
+      "group": "2"
+    },
+    {
+      "id": "2",
+      "firstName": "Diyorbek",
+      "lastName": "Bekmurodov",
+      "group": "zvzxz"
+    },
+    {
+      "id": "йывйы",
+      "firstName": "ыфвыффв",
+      "lastName": "фыввфыа",
+      "group": "фыафыаф"
+    },
+    {
+      "id": "cads",
+      "firstName": "dadfds",
+      "lastName": "zdfsds",
+      "group": "dfsdfa"
+    },
+    {
+      "id": "zvcvzc",
+      "firstName": "qap;owjeadsfsfkaldfwsdl;gsd",
+      "lastName": "jhb,nbk.m, ",
+      "group": "2"
+    },
+    {
+      "id": "Nurjahon",
+      "firstName": "Turayev",
+      "lastName": "Zohidovich",
+      "group": "N58"
+    },
+    {
+      "id": "i2",
+      "firstName": "33",
+      "lastName": "3123",
+      "group": "efewfrws"
     }
   ]
 }
